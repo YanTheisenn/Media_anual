@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Média Anual</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+
+    </style>
+</head>
+<body>
+    <h1>Aqui vamos calcular sua média anual de determinada matéria</h1>
+
+    <p>Média do primeiro trimeste</p>
+    <input type="number" name="n1" id="n1">
+
+    <p>Média do segundo trimeste</p>
+    <input type="number" name="n2" id="n2">
+
+    <p>Média do terceiro trimeste</p>
+    <input type="number" name="n3" id="n3"> <br>
+    
+    <div class="btn">
+    <input type="button" value="Calcular" onclick="somar()">
+    </div>
+
+    <div id="res">Resultado</div>
+
+    <script>
+        function somar(){
+            var tm1 = document.querySelector('input#n1')
+            var tm2 = document.querySelector('input#n2')
+            var tm3 = document.querySelector('input#n3')
+            var res = document.querySelector('div#res')
+            var m1 = Number(tm1.value)
+            var m2 = Number(tm2.value)
+            var m3 = Number(tm3.value)
+            var m = (m1 + m2 + m3) / 3
+            res.innerHTML = `A sua média anual é de ${m}`
+        }
+    </script>
+</body>
+</html>
