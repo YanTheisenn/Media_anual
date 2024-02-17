@@ -6,21 +6,31 @@
 }
 
 body{
-    background-color: #00E3CC;
+    background-color: #010FE0;
+    color: white;
 }
 
 .container{
-    background-color: #32A89C;
+    background-color: #0056E0;
+    border-radius: 10px;
     margin: auto;
+    margin-top: 0;
     width: 540px;
+    text-align: center;
+    padding: 20px;
 }
 
 h1{
-    text-align:center ;
+    background-color: #080ba8;
+    width: 400px;
+    border-radius: 15px;
+    text-align: center;
+    padding: 15px;
+    margin: auto;
 }
 input{
     font: normal 20px arial;
-    width: 100px
+    width: 200px
 }
 p{
     font: normal 20px arial;
@@ -31,6 +41,9 @@ div.btn{
 }
 
 #res{
+    background-color: #080ba8;
+    border-radius: 15px;
     font-size: 30px;
+    padding: 15px;
     margin-top: 20px;
 }
