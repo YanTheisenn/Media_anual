@@ -13,8 +13,8 @@ body{
 .container{
     background-color: #2b2b2b;
     border-radius: 10px;
+    box-shadow: 2px 3px 5px white;
     margin: auto;
-    margin-top: 0;
     width: 440px;
     height: 640px;
     text-align: center;
@@ -32,8 +32,34 @@ h1{
 }
 input{
     font: normal 20px arial;
-    width: 200px
+    width: 200px;
+    height: 30px;
+    border-radius: 10px;
+    padding-left: 8px;
 }
+
+input[type=number]::-webkit-inner-spin-button,
+    input[type=number]::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+input.btn{
+    background-color: #ffffff;
+    font-size: 24px;
+    height: 60px;
+    width: 140px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px black;
+    margin-top: 10px;
+}
+
+input.btn:hover{
+    background-color: #1f1f1f;
+    color: white;
+    transition: 100ms;
+}
+
 p{
     font: normal 20px arial;
     line-height: 5px;
